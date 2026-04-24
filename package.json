@@ -1,0 +1,24 @@
+{
+  "name": "connecta-chat-em-tempo-real",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifelix081/Connecta-chat-em-tempo-real.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ifelix081/Connecta-chat-em-tempo-real/issues"
+  },
+  "homepage": "https://github.com/ifelix081/Connecta-chat-em-tempo-real#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
