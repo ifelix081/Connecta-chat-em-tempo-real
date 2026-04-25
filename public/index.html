@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Chat em Tempo Real</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connecta Chat</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="login-screen">
+  <div id="login-screen">
     <div class="login-card">
-        <h1>Entrar no Chat</h1>
-        <input id="username-input" placeholder="Seu nome" maxlength="30" />
-        <input id="room-input" placeholder="Nome da sala" maxlength="30" />
-        <button id="join-btn">Entrar</button>
+      <h1>💬 Connecta</h1>
+      <p>Chat em tempo real</p>
+      <input id="username-input" type="text" placeholder="Seu nome" maxlength="30" />
+      <input id="room-input" type="text" placeholder="Nome da sala" maxlength="30" />
+      <button id="join-btn">Entrar</button>
     </div>
-    </div>
-
-    <div id="chat-screen" class="hidden">
+  </div>
+  <div id="chat-screen" class="hidden">
     <aside id="sidebar">
-        <h3>Usuários online</h3>
-        <ul id="users-list"></ul>
+      <div class="sidebar-header"><span id="room-name"></span></div>
+      <h3>Online</h3>
+      <ul id="users-list"></ul>
     </aside>
     <main id="chat-main">
-        <div id="messages"></div>
-        <div id="typing-indicator"></div>
-        <form id="message-form">
-        <input id="message-input" placeholder="Digite uma mensagem..." autocomplete="off" />
+      <div id="messages"></div>
+      <div id="typing-indicator"></div>
+      <form id="message-form">
+        <input id="message-input" type="text" placeholder="Digite uma mensagem..." autocomplete="off" />
         <button type="submit">Enviar</button>
-        </form>
+      </form>
     </main>
-    </div>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="chat.js"></script>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
 </body>
 </html>

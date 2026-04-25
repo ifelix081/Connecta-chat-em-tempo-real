@@ -1,0 +1,19 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 30      # segundos
+      arrivalRate: 5    # 5 novos usuários por segundo
+  plugins:
+    socketio: {}
+
+scenarios:
+  - engine: socketio
+    flow:
+      - emit:
+          channel: "join_room"
+          data: { username: "user{{ $randomNumber() }}", room: "geral" }
+      - think: 2
+      - emit:
+          channel: "send_message"
+          data: { text: "Mensagem de teste" }
+      - think: 5
