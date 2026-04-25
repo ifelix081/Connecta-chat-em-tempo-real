@@ -1,0 +1,20 @@
+{
+    "name": "connect",
+    "customizations": 
+    {
+    "vscode": 
+        {
+        "extensions": 
+            [
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
+            "rangav.vscode-thunder-client",
+            "mongodb.mongodb-vscode",
+            "eamodio.gitlens",
+            "christian-kohler.path-intellisense",
+            "mikestead.dotenv",
+            "pkief.material-icon-theme"
+            ]
+        }
+    }
+}

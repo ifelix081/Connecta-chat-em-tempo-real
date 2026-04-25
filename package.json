@@ -13,7 +13,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/ifelix081/Connecta-chat-em-tempo-real/issues"
   },
@@ -26,6 +25,13 @@
     "socket.io": "^4.8.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.14",
+    "socket.io-client": "^4.8.3",
+    "supertest": "^7.2.2"
   }
+  "scripts": {
+  "test": "jest --runInBand",
+  "test:watch": "jest --watch"
+}
 }
