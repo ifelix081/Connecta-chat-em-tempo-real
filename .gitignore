@@ -3,4 +3,4 @@ node_modules/
 *.log
 .DS_Store
 .env
-mongodb-atlas-cli_1.14.3_linux_x86_64/
+mongodb-atlas-cli_1.14.3_linux_x86_64/mongodb-atlas-cli_1.14.3_linux_x86_64/
